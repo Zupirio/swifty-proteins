@@ -12,6 +12,12 @@
 		C03471FA21F738C000453883 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C03471F821F738C000453883 /* Main.storyboard */; };
 		C03471FC21F738CF00453883 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C03471FB21F738CF00453883 /* Assets.xcassets */; };
 		C03471FF21F738CF00453883 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C03471FD21F738CF00453883 /* LaunchScreen.storyboard */; };
+		C0B1F3B621F86E7300A40F1B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B1F3B521F86E7300A40F1B /* LoginViewController.swift */; };
+		C0B1F3B821F871A500A40F1B /* touchAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B1F3B721F871A500A40F1B /* touchAuthentication.swift */; };
+		C0B1F3BB21F8729D00A40F1B /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0B1F3BA21F8729D00A40F1B /* LocalAuthentication.framework */; };
+		C0B1F3BD21F8762F00A40F1B /* KeychainPasswordItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B1F3BC21F8762F00A40F1B /* KeychainPasswordItem.swift */; };
+		C0B1F3BF21F876A400A40F1B /* KeychainConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B1F3BE21F876A400A40F1B /* KeychainConfiguration.swift */; };
+		C0B1F3C121F8788800A40F1B /* AccountDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B1F3C021F8788800A40F1B /* AccountDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		C03471FB21F738CF00453883 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C03471FE21F738CF00453883 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C034720021F738CF00453883 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0B1F3B521F86E7300A40F1B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C0B1F3B721F871A500A40F1B /* touchAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = touchAuthentication.swift; sourceTree = "<group>"; };
+		C0B1F3BA21F8729D00A40F1B /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		C0B1F3BC21F8762F00A40F1B /* KeychainPasswordItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainPasswordItem.swift; sourceTree = "<group>"; };
+		C0B1F3BE21F876A400A40F1B /* KeychainConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainConfiguration.swift; sourceTree = "<group>"; };
+		C0B1F3C021F8788800A40F1B /* AccountDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0B1F3BB21F8729D00A40F1B /* LocalAuthentication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +53,7 @@
 			children = (
 				C03471F321F738C000453883 /* swifty proteins */,
 				C03471F221F738C000453883 /* Products */,
+				C0B1F3B921F8729D00A40F1B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 			usesTabs = 1;
@@ -56,13 +70,26 @@
 			isa = PBXGroup;
 			children = (
 				C03471F421F738C000453883 /* AppDelegate.swift */,
+				C0B1F3B521F86E7300A40F1B /* LoginViewController.swift */,
+				C0B1F3BC21F8762F00A40F1B /* KeychainPasswordItem.swift */,
+				C0B1F3C021F8788800A40F1B /* AccountDetailsViewController.swift */,
+				C0B1F3BE21F876A400A40F1B /* KeychainConfiguration.swift */,
 				C03471F621F738C000453883 /* ViewController.swift */,
 				C03471F821F738C000453883 /* Main.storyboard */,
 				C03471FB21F738CF00453883 /* Assets.xcassets */,
 				C03471FD21F738CF00453883 /* LaunchScreen.storyboard */,
 				C034720021F738CF00453883 /* Info.plist */,
+				C0B1F3B721F871A500A40F1B /* touchAuthentication.swift */,
 			);
 			path = "swifty proteins";
+			sourceTree = "<group>";
+		};
+		C0B1F3B921F8729D00A40F1B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0B1F3BA21F8729D00A40F1B /* LocalAuthentication.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +163,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0B1F3BF21F876A400A40F1B /* KeychainConfiguration.swift in Sources */,
+				C0B1F3C121F8788800A40F1B /* AccountDetailsViewController.swift in Sources */,
+				C0B1F3BD21F8762F00A40F1B /* KeychainPasswordItem.swift in Sources */,
+				C0B1F3B621F86E7300A40F1B /* LoginViewController.swift in Sources */,
 				C03471F721F738C000453883 /* ViewController.swift in Sources */,
 				C03471F521F738C000453883 /* AppDelegate.swift in Sources */,
+				C0B1F3B821F871A500A40F1B /* touchAuthentication.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
