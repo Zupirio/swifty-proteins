@@ -18,6 +18,7 @@
 		C0B1F3BD21F8762F00A40F1B /* KeychainPasswordItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B1F3BC21F8762F00A40F1B /* KeychainPasswordItem.swift */; };
 		C0B1F3BF21F876A400A40F1B /* KeychainConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B1F3BE21F876A400A40F1B /* KeychainConfiguration.swift */; };
 		C0B1F3C121F8788800A40F1B /* AccountDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B1F3C021F8788800A40F1B /* AccountDetailsViewController.swift */; };
+		C0B1F3C521F8977300A40F1B /* Switcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B1F3C421F8977300A40F1B /* Switcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		C0B1F3BC21F8762F00A40F1B /* KeychainPasswordItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainPasswordItem.swift; sourceTree = "<group>"; };
 		C0B1F3BE21F876A400A40F1B /* KeychainConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainConfiguration.swift; sourceTree = "<group>"; };
 		C0B1F3C021F8788800A40F1B /* AccountDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountDetailsViewController.swift; sourceTree = "<group>"; };
+		C0B1F3C421F8977300A40F1B /* Switcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Switcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				C03471FD21F738CF00453883 /* LaunchScreen.storyboard */,
 				C034720021F738CF00453883 /* Info.plist */,
 				C0B1F3B721F871A500A40F1B /* touchAuthentication.swift */,
+				C0B1F3C421F8977300A40F1B /* Switcher.swift */,
 			);
 			path = "swifty proteins";
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 			files = (
 				C0B1F3BF21F876A400A40F1B /* KeychainConfiguration.swift in Sources */,
 				C0B1F3C121F8788800A40F1B /* AccountDetailsViewController.swift in Sources */,
+				C0B1F3C521F8977300A40F1B /* Switcher.swift in Sources */,
 				C0B1F3BD21F8762F00A40F1B /* KeychainPasswordItem.swift in Sources */,
 				C0B1F3B621F86E7300A40F1B /* LoginViewController.swift in Sources */,
 				C03471F721F738C000453883 /* ViewController.swift in Sources */,

@@ -25,10 +25,10 @@
             </objects>
             <point key="canvasLocation" x="-3" y="12"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="rmP-ch-Hdf">
             <objects>
-                <viewController id="Vu5-b1-JcE" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginvc" id="Vu5-b1-JcE" customClass="LoginViewController" customModule="swifty_proteins" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gln-9l-8Un">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -79,6 +79,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="erj-6T-eUT"/>
                     </view>
+                    <connections>
+                        <outlet property="view" destination="d6G-LX-WMu" id="1gY-W8-7hA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xdh-XV-lw7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
